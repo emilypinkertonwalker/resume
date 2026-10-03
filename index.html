@@ -38,7 +38,7 @@ body {
   border-bottom: 1px solid var(--border);
 }
 .brand-inner {
-  max-width: 700px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .brand-name-row {
@@ -65,7 +65,7 @@ body {
   animation: fadeDown 0.6s ease 0.1s both;
 }
 .brand-bio {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--text-muted);
   font-weight: 300;
@@ -256,17 +256,16 @@ body {
 /* ── TEAM GRID ── */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 14px;
 }
 .team-card {
   background: var(--surface);
   border-radius: 14px;
-  padding: 22px 24px;
+  padding: 24px;
   border: 1px solid var(--border);
   transition: border-color 0.3s, transform 0.2s;
   animation: fadeUp 0.5s ease both;
-  text-align: center;
 }
 .team-card:hover { border-color: rgba(34,211,238,0.2); transform: translateY(-2px); }
 .team-card-name {
@@ -275,6 +274,39 @@ body {
   color: #fff;
   margin-bottom: 4px;
 }
+.alum-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: rgba(148,163,184,0.12);
+  border: 1px solid rgba(148,163,184,0.22);
+  vertical-align: middle;
+}
+.ramp-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(34,211,238,0.10);
+  border: 1px solid rgba(34,211,238,0.3);
+  vertical-align: middle;
+}
+.ramp-note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
 .team-card-range {
   font-size: 11px;
   color: var(--text-muted);
@@ -282,14 +314,13 @@ body {
 }
 .team-card-stats {
   display: flex;
-  justify-content: center;
-  gap: 32px;
+  gap: 16px;
 }
 .team-stat {
-  text-align: center;
+  flex: 1;
 }
 .team-stat-val {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
 }
@@ -1066,7 +1097,8 @@ body {
       <h1 class="brand-name">Emily Walker</h1>
     </div>
     <p class="brand-title">Solutions Consulting Leader | Commercial & Mid-Market GTM | Technical Sales Leadership | AI, Cloud & Workflow Transformation</p>
-    <p class="brand-bio">Solutions Consulting leader with 15+ years of experience across IT operations and technical pre-sales, including 6+ years of direct people management. Led a 6-person technical team at Brain Corp; currently manages a team of 7 AI Solution Engineers at ServiceNow. Proven track record partnering with Sales to drive Commercial and Mid-Market growth while coaching early-in-career and tenured consultants through discovery, demos, technical validation, and customer value realization. Known for building scalable enablement programs, driving cross-functional alignment, and translating complex technical concepts into business outcomes.</p>
+    <p class="brand-bio">Solutions Consulting leader with 15+ years of experience across IT operations and technical pre-sales, including 6+ years of direct people management. Led a 6-person technical team at Brain Corp, a San Diego–based developer of AI software and cloud-based operating systems for autonomous mobile robots, and currently manages a team of 12 AI Solution Consultants at ServiceNow, the AI platform for business transformation that helps organizations proactively manage high-impact work by uniting AI, data, and workflows on a single cloud.</p>
+    <p class="brand-bio">Proven track record partnering with Sales to drive Commercial and Mid-Market growth while coaching early-in-career and tenured consultants through discovery, demos, technical validation, and customer value realization. Known for building scalable enablement programs, driving cross-functional alignment, and translating complex technical concepts into business outcomes.</p>
     <div class="brand-pills">
       <span class="brand-pill">IT Operations Management</span>
       <span class="brand-pill">IT Service Management</span>
@@ -1093,68 +1125,72 @@ body {
 
 <!-- ── HERO ── -->
 <section class="hero">
-  <div class="hero-tag">AI Solution Engineer Team Performance</div>
+  <div class="hero-tag">AI Solution Consultant Team Performance</div>
   <h1>The Workflow Walkers</h1>
-  <p class="hero-sub">Building & Leading a $9M+ AI Solution Team</p>
+  <p class="hero-sub">Building & Leading a $20M+ AI Solution Team</p>
   <p class="hero-date">2.1.2024 – Current</p>
 </section>
 
 <!-- ── KPI STRIP ── -->
 <div class="kpi-strip">
   <div class="kpi-card">
-    <div class="kpi-value cyan" style="font-size:clamp(36px,5vw,56px); background:linear-gradient(135deg,#22d3ee,#10b981); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">$9.27M</div>
-    <div class="kpi-label">Total New ACV</div>
+    <div class="kpi-value cyan">$20.21M</div>
+    <div class="kpi-label">Total NNACV</div>
   </div>
   <div class="kpi-card">
-    <div class="kpi-value gold" style="font-size:clamp(36px,5vw,56px);">398</div>
-    <div class="kpi-label">Closed Won Opps</div>
+    <div class="kpi-value gold">838</div>
+    <div class="kpi-label">Total Closed Won Opptys</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value green">$24.1K</div>
+    <div class="kpi-label">Average Deal Size</div>
   </div>
 </div>
 
 <!-- ── TOP 5 DEALS ── -->
 <section class="top-deals">
   <div style="text-align:center"><div class="deals-tag">Top Deals</div></div>
-  <h2 class="section-title">Top 5 <span>New ACV Deals</span></h2>
+  <h2 class="section-title">Top 5 <span>NNACV Deals</span></h2>
   <div class="deals-grid">
     <div class="deal-card deal-1" style="animation-delay:0.1s">
       <div class="deal-rank">#1</div>
       <div class="deal-info">
-        <div class="deal-account">Enterprise AI & Healthcare Company</div>
-        <div class="deal-sc">Christi</div>
+        <div class="deal-account">Healthcare Insurance</div>
+        <div class="deal-sc">Connor</div>
       </div>
-      <div class="deal-amount">$399K</div>
+      <div class="deal-amount">$1.42M</div>
     </div>
     <div class="deal-card deal-2" style="animation-delay:0.15s">
       <div class="deal-rank">#2</div>
       <div class="deal-info">
-        <div class="deal-account">Global Technology Services Firm</div>
-        <div class="deal-sc">Mohammed</div>
+        <div class="deal-account">Technology — Software, Services &amp; Security</div>
+        <div class="deal-sc">Maher</div>
       </div>
-      <div class="deal-amount">$350K</div>
+      <div class="deal-amount">$594K</div>
     </div>
     <div class="deal-card deal-3" style="animation-delay:0.2s">
       <div class="deal-rank">#3</div>
       <div class="deal-info">
-        <div class="deal-account">National QSR & Franchise Brand</div>
+        <div class="deal-account">Technology — Software, Services &amp; Security</div>
         <div class="deal-sc">Mohammed</div>
       </div>
-      <div class="deal-amount">$249K</div>
+      <div class="deal-amount">$350K</div>
     </div>
     <div class="deal-card" style="animation-delay:0.25s">
       <div class="deal-rank">#4</div>
       <div class="deal-info">
-        <div class="deal-account">Healthcare Services Provider</div>
-        <div class="deal-sc">David</div>
+        <div class="deal-account">Telecommunications</div>
+        <div class="deal-sc">Alex</div>
       </div>
-      <div class="deal-amount">$206K</div>
+      <div class="deal-amount">$333K</div>
     </div>
     <div class="deal-card" style="animation-delay:0.3s">
       <div class="deal-rank">#5</div>
       <div class="deal-info">
-        <div class="deal-account">Financial Technology Company</div>
-        <div class="deal-sc">Josh</div>
+        <div class="deal-account">Technology — Software, Services &amp; Security</div>
+        <div class="deal-sc">Monique</div>
       </div>
-      <div class="deal-amount">$190K</div>
+      <div class="deal-amount">$285K</div>
     </div>
   </div>
 </section>
@@ -1162,16 +1198,17 @@ body {
 <!-- ── TEAM ROSTER ── -->
 <section class="leaderboard">
   <div style="text-align:center"><div class="lb-tag">The Team</div></div>
-  <h2 class="section-title">AI Solution <span>Engineers</span></h2>
+  <h2 class="section-title">AI Solution <span>Consultants</span></h2>
+  <p style="text-align:center;color:var(--text-muted);font-size:12px;max-width:620px;margin:-8px auto 28px">Closed-won new annual contract value, February 2024 – October 2026. Each consultant's date range reflects their own first and last close within that window. &ldquo;Alumni&rdquo; denotes consultants who have since moved to other teams. &ldquo;Ramping&rdquo; denotes consultants who have recently completed training and are building toward their first closed deals.</p>
   <div class="team-grid" id="team-grid"></div>
 </section>
 
 <!-- ── AI-NATIVE ── -->
 <section class="ai-native-section">
   <div class="ai-native-header">
-    <div class="ai-native-tag">AI-Native</div>
-    <h2 class="section-title">AI-Native <span>Impact</span></h2>
-    <p class="ai-native-sub">Now Assist · Pro+ · GenAI</p>
+    <div class="ai-native-tag">AI Platform</div>
+    <h2 class="section-title">AI Platform <span>Impact</span></h2>
+    <p class="ai-native-sub">AI Platform Foundations · Now Assist</p>
     <div class="ai-robot">
       <svg viewBox="0 0 120 130" width="48" xmlns="http://www.w3.org/2000/svg">
         <!-- antenna -->
@@ -1217,15 +1254,15 @@ body {
 
   <div class="ai-kpi-strip">
     <div class="ai-kpi">
-      <div class="ai-kpi-val">$645K</div>
-      <div class="ai-kpi-label">AI-Native New ACV</div>
+      <div class="ai-kpi-val">$783K</div>
+      <div class="ai-kpi-label">AI Platform New ACV</div>
     </div>
     <div class="ai-kpi">
-      <div class="ai-kpi-val">41</div>
+      <div class="ai-kpi-val">66</div>
       <div class="ai-kpi-label">AI Opportunities</div>
     </div>
     <div class="ai-kpi">
-      <div class="ai-kpi-val">10/10</div>
+      <div class="ai-kpi-val">15/17</div>
       <div class="ai-kpi-label">Team Adoption</div>
     </div>
   </div>
@@ -1237,7 +1274,6 @@ body {
 <section class="product-section">
   <div style="text-align:center"><div class="prod-tag">Product Mix</div></div>
   <h2 class="section-title">Top <span>Product Lines</span> Across Team</h2>
-  <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:-8px;margin-bottom:20px;">★ = Business units my team was responsible for demonstrating</p>
   <div class="product-grid" id="product-grid"></div>
 </section>
 
@@ -1248,28 +1284,28 @@ body {
   <div class="highlights-grid">
     <div class="highlight-card" style="animation-delay:0.1s">
       <h3>Largest Single Deal</h3>
-      <div class="big-stat">$399K</div>
-      <p>Christi's largest deal, spanning Legal & Contract Ops, WDF, ITSM, and HR in a massive multi-product platform win.</p>
+      <div class="big-stat">$1.42M</div>
+      <p>Connor's largest deal — a multi-product platform win spanning nine product lines, and the team's single biggest closed-won opportunity.</p>
     </div>
     <div class="highlight-card" style="animation-delay:0.2s">
-      <h3>Highest Volume Engineer</h3>
-      <div class="big-stat">109 Opps</div>
-      <p>Ben led the team in closed opportunity count, supporting current customers with relentless execution across the book.</p>
+      <h3>Highest Volume Consultant</h3>
+      <div class="big-stat">138 Opps</div>
+      <p>Joshua M. led the team in closed opportunity count, supporting current customers with relentless execution across the book.</p>
     </div>
     <div class="highlight-card" style="animation-delay:0.3s">
       <h3>Biggest Avg Deal</h3>
-      <div class="big-stat">$167K</div>
-      <p>Maher averaged $167K per deal with just 4 massive closed-won opportunities since joining in October.</p>
+      <div class="big-stat">$51K</div>
+      <p>Mohammed posted the team's highest average deal size at ~$51K across 22 closed-won opportunities — efficiency paired with scale.</p>
     </div>
     <div class="highlight-card" style="animation-delay:0.4s">
       <h3>$1M+ Club</h3>
-      <div class="big-stat">5 Engineers</div>
-      <p>Ben, Maddie, Elsa, Peyton, and Mohammed all crossed the million-dollar new annual contract value threshold, half the team.</p>
+      <div class="big-stat">9 Consultants</div>
+      <p>Joshua M., Connor, Ben, Maddie, Maher, Will, Elsa, Peyton, and Mohammed each crossed the million-dollar new annual contract value threshold — 9 of the 19 consultants who have served on the team across this period.</p>
     </div>
     <div class="highlight-card" style="animation-delay:0.5s">
       <h3>Customer Service Leader</h3>
-      <div class="big-stat">$571K</div>
-      <p>Mohammed drove over half a million in Customer Service new ACV alone, the highest single-product contribution on the team.</p>
+      <div class="big-stat">$799K</div>
+      <p>Maher led the team in Customer Service new ACV, closing nearly $800K in the product line on his own.</p>
     </div>
     <div class="highlight-card" style="animation-delay:0.6s">
       <h3>Product Breadth</h3>
@@ -1296,7 +1332,7 @@ body {
 <section class="emily-section">
   <div class="emily-header">
     <div class="emily-tag">Leadership & Impact</div>
-    <h2 class="section-title">Leadership <span>Impact</span></h2>
+    <h2 class="section-title">Emily — <span>Leadership Impact</span></h2>
     <p class="emily-sub">Manager & Architect of The Workflow Walkers</p>
   </div>
 
@@ -1327,22 +1363,22 @@ body {
     <div class="emily-card emily-story" style="animation-delay:0.1s">
       <div class="emily-icon"><svg viewBox="0 0 40 40" width="32" xmlns="http://www.w3.org/2000/svg"><polygon points="20,4 25,15 37,15 27,23 31,35 20,27 9,35 13,23 3,15 15,15" fill="#1a2236" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round"><animate attributeName="stroke-opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/></polygon></svg></div>
       <h3>Built the Talent Engine</h3>
-      <p>Took on the SC Manager role on <strong>February 1, 2024</strong> and built The Workflow Walkers into a high-performing team of at most 10 AI Solution Engineers. The Commercial Growth segment serves as ServiceNow's SC training ground, a talent engine that develops engineers before they move into the broader field.</p>
+      <p>Took on the SC Manager role on <strong>February 1, 2024</strong> and built The Workflow Walkers into a high-performing team of at most 10 AI Solution Consultants. The Commercial Growth segment serves as ServiceNow's SC training ground, a talent engine that develops consultants before they move into the broader field.</p>
     </div>
 
     <div class="emily-card" style="animation-delay:0.15s">
       <div class="emily-stat-row">
         <div class="emily-mini-stat">
-          <div class="emily-mini-val">10</div>
-          <div class="emily-mini-label">Engineers Hired</div>
+          <div class="emily-mini-val">19</div>
+          <div class="emily-mini-label">Consultants Hired</div>
         </div>
         <div class="emily-mini-stat">
-          <div class="emily-mini-val">$9.27M</div>
+          <div class="emily-mini-val">$20.21M</div>
           <div class="emily-mini-label">Team New ACV</div>
         </div>
       </div>
       <h3>Hiring & Team Building</h3>
-      <p>Hired 10 team members throughout the team's entirety, a mix of inheriting existing talent and bringing in new hires. Shaped a culture of collaboration, development, and accountability.</p>
+      <p>Hired 19 team members throughout the team's entirety, a mix of inheriting existing talent and bringing in new hires. Shaped a culture of collaboration, development, and accountability.</p>
     </div>
 
     <div class="emily-card" style="animation-delay:0.2s">
@@ -1360,41 +1396,12 @@ body {
     <div class="emily-card" style="animation-delay:0.3s">
       <div class="emily-stat-row">
         <div class="emily-mini-stat">
-          <div class="emily-mini-val">5</div>
+          <div class="emily-mini-val">7</div>
           <div class="emily-mini-label">Field Promotions</div>
         </div>
       </div>
       <h3>Developing Field-Ready Talent</h3>
-      <p>Five team members promoted from inside Commercial Growth into field SC roles, a direct result of the team's development culture, mentorship program, and multi-product exposure. Proof that the talent engine works.</p>
-    </div>
-  </div>
-
-  <!-- Key Projects (inside leadership section) -->
-  <div style="text-align:center;margin-top:40px;margin-bottom:24px"><div class="projects-tag">Key Projects</div></div>
-  <div class="projects-grid">
-    <div class="project-card" style="animation-delay:0.1s">
-      <div class="project-icon"><svg viewBox="0 0 40 40" width="28" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="8" width="32" height="24" rx="4" fill="#1a2236" stroke="#22d3ee" stroke-width="2.5"/><circle cx="20" cy="20" r="6" fill="none" stroke="#22d3ee" stroke-width="2.5"/><circle cx="20" cy="20" r="2" fill="#f59e0b"><animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite"/></circle></svg></div>
-      <h3>CRM Implementation</h3>
-      <div class="project-subtitle">Salesforce</div>
-      <p>Contributed to the Salesforce CRM integration project team. Streamlined sales workflows, pipeline visibility, and reporting for the GTM team.</p>
-    </div>
-    <div class="project-card" style="animation-delay:0.15s">
-      <div class="project-icon"><svg viewBox="0 0 40 40" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M8 20 L16 20" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/><path d="M24 20 L32 20" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/><rect x="14" y="12" width="12" height="16" rx="3" fill="#1a2236" stroke="#a78bfa" stroke-width="2.5"/><circle cx="20" cy="18" r="2" fill="#a78bfa"><animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/></circle><circle cx="20" cy="24" r="2" fill="#a78bfa"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></circle></svg></div>
-      <h3>Integration and Automation</h3>
-      <div class="project-subtitle">MuleSoft</div>
-      <p>Implemented MuleSoft as the enterprise integration layer — connecting systems, automating data flows, and establishing reusable API patterns.</p>
-    </div>
-    <div class="project-card" style="animation-delay:0.2s">
-      <div class="project-icon"><svg viewBox="0 0 40 40" width="28" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="28" height="28" rx="4" fill="#1a2236" stroke="#10b981" stroke-width="2.5"/><line x1="12" y1="14" x2="28" y2="14" stroke="#10b981" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="20" x2="24" y2="20" stroke="#10b981" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="26" x2="20" y2="26" stroke="#10b981" stroke-width="2" stroke-linecap="round"/></svg></div>
-      <h3>ERP Implementation</h3>
-      <div class="project-subtitle">NetSuite</div>
-      <p>Project team member on the NetSuite ERP rollout — consolidating financials, procurement, and inventory into one platform with real-time visibility.</p>
-    </div>
-    <div class="project-card" style="animation-delay:0.25s">
-      <div class="project-icon"><svg viewBox="0 0 40 40" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M8 30 L8 14 L20 6 L32 14 L32 30" fill="none" stroke="#f472b6" stroke-width="2.5" stroke-linejoin="round"/><line x1="8" y1="30" x2="32" y2="30" stroke="#f472b6" stroke-width="2.5" stroke-linecap="round"/><rect x="16" y="22" width="8" height="8" rx="1" fill="#1a2236" stroke="#f472b6" stroke-width="2"/></svg></div>
-      <h3>Building Moves</h3>
-      <div class="project-subtitle">Facilities and IT</div>
-      <p>Planned and executed office relocations with zero downtime. Coordinated network migration, workstation deployments, and conference room buildouts.</p>
+      <p>Seven team members promoted from inside Commercial Growth into field SC roles, a direct result of the team's development culture, mentorship program, and multi-product exposure. Proof that the talent engine works.</p>
     </div>
   </div>
 
@@ -1416,9 +1423,11 @@ body {
       <div class="award-icon"><svg viewBox="0 0 44 44" width="36" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="28" width="8" height="10" rx="2" fill="#1a2236" stroke="#22d3ee" stroke-width="2.5"/><rect x="18" y="18" width="8" height="20" rx="2" fill="#1a2236" stroke="#22d3ee" stroke-width="2.5"/><rect x="28" y="8" width="8" height="30" rx="2" fill="#1a2236" stroke="#22d3ee" stroke-width="2.5"/><line x1="6" y1="40" x2="38" y2="40" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"/><circle cx="32" cy="6" r="3" fill="none" stroke="#f59e0b" stroke-width="2"><animate attributeName="r" values="3;4;3" dur="2s" repeatCount="indefinite"/></circle></svg></div>
       <div class="award-type">Quota Attainment</div>
       <div class="award-certs">
-        <div class="cert-item">Q1 FY26 — 79.9% <span class="cert-date">$626K / $783K</span></div>
-        <div class="cert-item">Q4 FY25 — 88.2% <span class="cert-date">$17.3M / $19.6M</span></div>
-        <div class="cert-item">Q3 FY25 — 81.9% <span class="cert-date">$10.5M / $12.8M</span></div>
+        <div class="cert-item">Q3 FY26 — 119%</div>
+        <div class="cert-item">Q2 FY26 — 105%</div>
+        <div class="cert-item">Q1 FY26 — 81%</div>
+        <div class="cert-item">Q4 FY25 — 88.2%</div>
+        <div class="cert-item">Q3 FY25 — 81.9%</div>
       </div>
     </div>
     <div class="award-card" style="animation-delay:0.29s">
@@ -1491,7 +1500,7 @@ body {
         <div class="tl-date">Feb 2024 – Present</div>
         <div class="tl-role">Solution Consulting Leader — West & Central</div>
         <div class="tl-company">ServiceNow · San Diego, CA</div>
-        <div class="tl-desc">Leads a team of Solution Consultants supporting Commercial and Mid-Market segments. Partners with Account Executives to drive pipeline creation, technical validation, and full-cycle deal progression. Built a high-performing team of up to 10 AI Solution Engineers in the Commercial Growth segment. Delivered $9.27M in closed-won new annual contract value (ACV) across 398 opportunities. Established the team as ServiceNow's SC talent engine, developing multi-product expertise before engineers graduate to larger segments.</div>
+        <div class="tl-desc">Leads a team of Solution Consultants supporting Commercial and Mid-Market segments. Partners with Account Executives to drive pipeline creation, technical validation, and full-cycle deal progression. Built a high-performing team of up to 10 AI Solution Consultants in the Commercial Growth segment. Delivered $9.27M in closed-won new annual contract value (ACV) across 398 opportunities. Established the team as ServiceNow's SC talent engine, developing multi-product expertise before consultants graduate to larger segments.</div>
       </div>
     </div>
 
@@ -1555,6 +1564,36 @@ body {
       </div>
     </div>
   </div>
+
+  <!-- Key Projects (work at other companies, outside ServiceNow) -->
+  <div style="text-align:center;margin-top:40px;margin-bottom:24px"><div class="projects-tag">Key Projects</div></div>
+  <div class="projects-grid">
+    <div class="project-card" style="animation-delay:0.1s">
+      <div class="project-icon"><svg viewBox="0 0 40 40" width="28" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="8" width="32" height="24" rx="4" fill="#1a2236" stroke="#22d3ee" stroke-width="2.5"/><circle cx="20" cy="20" r="6" fill="none" stroke="#22d3ee" stroke-width="2.5"/><circle cx="20" cy="20" r="2" fill="#f59e0b"><animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite"/></circle></svg></div>
+      <h3>CRM Implementation</h3>
+      <div class="project-subtitle">Salesforce</div>
+      <p>Contributed to the Salesforce CRM integration project team. Streamlined sales workflows, pipeline visibility, and reporting for the GTM team.</p>
+    </div>
+    <div class="project-card" style="animation-delay:0.15s">
+      <div class="project-icon"><svg viewBox="0 0 40 40" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M8 20 L16 20" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/><path d="M24 20 L32 20" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/><rect x="14" y="12" width="12" height="16" rx="3" fill="#1a2236" stroke="#a78bfa" stroke-width="2.5"/><circle cx="20" cy="18" r="2" fill="#a78bfa"><animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/></circle><circle cx="20" cy="24" r="2" fill="#a78bfa"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></circle></svg></div>
+      <h3>Integration and Automation</h3>
+      <div class="project-subtitle">MuleSoft</div>
+      <p>Implemented MuleSoft as the enterprise integration layer — connecting systems, automating data flows, and establishing reusable API patterns.</p>
+    </div>
+    <div class="project-card" style="animation-delay:0.2s">
+      <div class="project-icon"><svg viewBox="0 0 40 40" width="28" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="28" height="28" rx="4" fill="#1a2236" stroke="#10b981" stroke-width="2.5"/><line x1="12" y1="14" x2="28" y2="14" stroke="#10b981" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="20" x2="24" y2="20" stroke="#10b981" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="26" x2="20" y2="26" stroke="#10b981" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <h3>ERP Implementation</h3>
+      <div class="project-subtitle">NetSuite</div>
+      <p>Project team member on the NetSuite ERP rollout — consolidating financials, procurement, and inventory into one platform with real-time visibility.</p>
+    </div>
+    <div class="project-card" style="animation-delay:0.25s">
+      <div class="project-icon"><svg viewBox="0 0 40 40" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M8 30 L8 14 L20 6 L32 14 L32 30" fill="none" stroke="#f472b6" stroke-width="2.5" stroke-linejoin="round"/><line x1="8" y1="30" x2="32" y2="30" stroke="#f472b6" stroke-width="2.5" stroke-linecap="round"/><rect x="16" y="22" width="8" height="8" rx="1" fill="#1a2236" stroke="#f472b6" stroke-width="2"/></svg></div>
+      <h3>Building Moves</h3>
+      <div class="project-subtitle">Facilities and IT</div>
+      <p>Planned and executed office relocations with zero downtime. Coordinated network migration, workstation deployments, and conference room buildouts.</p>
+    </div>
+  </div>
+
 </section>
 
 <!-- ── FOOTER ── -->
@@ -1564,16 +1603,25 @@ body {
 
 <script>
 const team = [
-  { name: "Ben", nnacv: 1460233, opps: 109, range: "Mar 2024 – Mar 2026" },
-  { name: "Christi", nnacv: 326075, opps: 26, range: "Mar 2024 – Nov 2024" },
-  { name: "Connor", nnacv: 367107, opps: 19, range: "Sep 2024 – Jan 2026" },
-  { name: "David", nnacv: 988441, opps: 48, range: "Mar 2024 – May 2025" },
-  { name: "Elsa", nnacv: 1259832, opps: 49, range: "Mar 2024 – Oct 2025" },
-  { name: "Josh", nnacv: 632293, opps: 28, range: "Mar 2024 – Jan 2025" },
-  { name: "Maddie", nnacv: 1263819, opps: 66, range: "Jan 2025 – Jan 2026" },
-  { name: "Maher", nnacv: 669486, opps: 4, range: "Dec 2025 – Mar 2026" },
-  { name: "Mohammed", nnacv: 1106915, opps: 21, range: "Sep 2024 – Mar 2026" },
-  { name: "Peyton", nnacv: 1194434, opps: 28, range: "Jul 2024 – Jan 2026" },
+  { name: "Joshua M.", nnacv: 2703582, opps: 138, range: "Feb 2024 – Sep 2026", alum: false },
+  { name: "Connor", nnacv: 2646043, opps: 58, range: "Sep 2024 – Sep 2026", alum: true },
+  { name: "Ben", nnacv: 1833404, opps: 123, range: "Mar 2024 – May 2026", alum: true },
+  { name: "Maddie", nnacv: 1781635, opps: 95, range: "Jan 2025 – Sep 2026", alum: true },
+  { name: "Maher", nnacv: 1712474, opps: 36, range: "Jul 2024 – Aug 2026", alum: false },
+  { name: "Will", nnacv: 1504423, opps: 87, range: "Nov 2024 – Sep 2026", alum: true },
+  { name: "Elsa", nnacv: 1259832, opps: 49, range: "Mar 2024 – Oct 2025", alum: true },
+  { name: "Peyton", nnacv: 1194434, opps: 30, range: "Jul 2024 – Jan 2026", alum: true },
+  { name: "Mohammed", nnacv: 1116992, opps: 22, range: "Sep 2024 – Apr 2026", alum: true },
+  { name: "David", nnacv: 988441, opps: 49, range: "Feb 2024 – May 2025", alum: true },
+  { name: "Nikhil", nnacv: 929659, opps: 39, range: "Apr 2024 – Sep 2026", alum: true },
+  { name: "Josh B.", nnacv: 768373, opps: 31, range: "Feb 2024 – Jan 2025", alum: true },
+  { name: "Alex", nnacv: 628946, opps: 21, range: "May 2026 – Oct 2026", alum: false },
+  { name: "Monique", nnacv: 450958, opps: 7, range: "May 2026 – Sep 2026", alum: false },
+  { name: "Christi", nnacv: 363918, opps: 27, range: "Mar 2024 – Oct 2025", alum: true },
+  { name: "Sam", nnacv: 201161, opps: 8, range: "Jun 2026 – Sep 2026", alum: false },
+  { name: "Cameron", nnacv: 128294, opps: 18, range: "Feb 2026 – Sep 2026", alum: false },
+  { name: "Hayley", ramping: true, range: "Recently completed training" },
+  { name: "Wade", ramping: true, range: "Recently completed training" },
 ];
 
 const tgrid = document.getElementById("team-grid");
@@ -1582,8 +1630,18 @@ team.forEach((sc, i) => {
   const card = document.createElement("div");
   card.className = "team-card";
   card.style.animationDelay = `${0.04 * i}s`;
+  if (sc.ramping) {
+    card.innerHTML = `
+    <div class="team-card-name">${sc.name}<span class="ramp-badge">Ramping</span></div>
+    <div class="team-card-range">${sc.range}</div>
+    <div class="ramp-note">Newest members of the team, now building pipeline and working toward their first closed deals.</div>
+  `;
+    tgrid.appendChild(card);
+    return;
+  }
+  const avg = sc.nnacv / sc.opps;
   card.innerHTML = `
-    <div class="team-card-name">${sc.name}</div>
+    <div class="team-card-name">${sc.name}${sc.alum ? '<span class="alum-badge">Alumni</span>' : ''}</div>
     <div class="team-card-range">${sc.range}</div>
     <div class="team-card-stats">
       <div class="team-stat">
@@ -1594,6 +1652,10 @@ team.forEach((sc, i) => {
         <div class="team-stat-val opps">${sc.opps}</div>
         <div class="team-stat-label">Opps</div>
       </div>
+      <div class="team-stat">
+        <div class="team-stat-val avg">$${(avg/1000).toFixed(1)}K</div>
+        <div class="team-stat-label">Avg Deal</div>
+      </div>
     </div>
   `;
   tgrid.appendChild(card);
@@ -1601,18 +1663,18 @@ team.forEach((sc, i) => {
 
 // Product data (aggregated across all SCs where available)
 const products = [
-  { name: "IT Service Management", val: 2100000, color: "var(--accent)", star: true },
-  { name: "Customer Service", val: 1400000, color: "var(--pink)" },
-  { name: "Workflow Data Fabric", val: 650000, color: "var(--purple)", star: true },
-  { name: "IT Operations Management", val: 580000, color: "var(--green)", star: true },
-  { name: "Asset Management", val: 350000, color: "var(--gold)", star: true },
-  { name: "Security", val: 280000, color: "#ef4444" },
-  { name: "Field Service Management", val: 250000, color: "#f59e0b" },
-  { name: "Financial Services", val: 220000, color: "#2dd4bf" },
-  { name: "Portfolio Management", val: 200000, color: "#818cf8" },
-  { name: "Risk", val: 180000, color: "#f472b6" },
-  { name: "AI Platform", val: 160000, color: "#2dd4bf", star: true },
-  { name: "Impact", val: 150000, color: "#2dd4bf" },
+  { name: "ITSM", val: 6230480, color: "var(--accent)", star: true },
+  { name: "Customer Service", val: 4864095, color: "var(--pink)", star: true },
+  { name: "Impact", val: 1572821, color: "#2dd4bf" },
+  { name: "ITOM", val: 1365327, color: "var(--green)", star: true },
+  { name: "WDF", val: 1201552, color: "var(--purple)", star: true },
+  { name: "Asset Mgmt", val: 839849, color: "var(--gold)", star: true },
+  { name: "FSM", val: 790469, color: "#ef4444" },
+  { name: "AI Platform Foundations", val: 695163, color: "#2dd4bf", star: true },
+  { name: "Portfolio Mgmt", val: 564724, color: "#818cf8" },
+  { name: "Risk", val: 502062, color: "#f472b6" },
+  { name: "Creator App Engine", val: 477805, color: "#f59e0b" },
+  { name: "HR", val: 476803, color: "#f472b6" },
 ];
 
 const starSvg = `<svg viewBox="0 0 20 20" width="12" class="product-star" xmlns="http://www.w3.org/2000/svg"><polygon points="10,2 12.5,7.5 18.5,7.5 13.5,11.5 15.5,17.5 10,13.5 4.5,17.5 6.5,11.5 1.5,7.5 7.5,7.5" fill="#f59e0b" stroke="#f59e0b" stroke-width="1" stroke-linejoin="round"><animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/></polygon></svg>`;
@@ -1633,18 +1695,23 @@ products.forEach((p, i) => {
   pgrid.appendChild(card);
 });
 
-// AI-Native data per SC
+// AI Platform data per SC
 const aiData = [
-  { name: "Elsa", nnacv: 132298, opps: 10 },
-  { name: "Mohammed", nnacv: 82666, opps: 3 },
-  { name: "Maddie", nnacv: 70391, opps: 4 },
-  { name: "Maher", nnacv: 67856, opps: 2 },
-  { name: "Christi", nnacv: 62413, opps: 4 },
-  { name: "Josh", nnacv: 55724, opps: 4 },
-  { name: "Ben", nnacv: 55585, opps: 3 },
-  { name: "Connor", nnacv: 50373, opps: 4 },
+  { name: "Connor", nnacv: 169285, opps: 9 },
+  { name: "Maddie", nnacv: 123274, opps: 6 },
+  { name: "Will", nnacv: 96361, opps: 6 },
+  { name: "Joshua M.", nnacv: 83045, opps: 7 },
+  { name: "Mohammed", nnacv: 79693, opps: 3 },
+  { name: "Ben", nnacv: 67109, opps: 5 },
+  { name: "Elsa", nnacv: 54661, opps: 7 },
   { name: "David", nnacv: 49594, opps: 5 },
+  { name: "Maher", nnacv: 39213, opps: 2 },
+  { name: "Alex", nnacv: 32476, opps: 4 },
   { name: "Peyton", nnacv: 17700, opps: 2 },
+  { name: "Nikhil", nnacv: 9339, opps: 3 },
+  { name: "Sam", nnacv: 8131, opps: 1 },
+  { name: "Monique", nnacv: 7916, opps: 1 },
+  { name: "Josh B.", nnacv: 1440, opps: 1 },
 ];
 
 const aigrid = document.getElementById("ai-grid");
